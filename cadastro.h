@@ -17,12 +17,11 @@ public:
 
 private slots:
     void on_voltar_clicked();
-private slots:
     void on_salvar_clicked();
-
 
 private:
     Ui::Cadastro *ui;
+    bool validarSenha(const QString &senha); // Declaração da função
 };
 
 #endif // CADASTRO_H

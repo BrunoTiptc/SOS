@@ -1,15 +1,22 @@
 #include "cadastro.h"
 #include "ui_cadastro.h"
-#include "qstring.h"
-#include "qsqlquery.h"
-#include "QSqlError"
+#include <QLineEdit>
+#include <QString>
+#include <QSqlQuery>
+#include <QSqlError>
 #include <QMessageBox>
+#include <QRegularExpression>
+#include <QDebug>
 
 Cadastro::Cadastro(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Cadastro)
 {
     ui->setupUi(this);
+
+    // Configurar os campos de senha para exibir bolinhas
+    ui->Senha->setEchoMode(QLineEdit::Password);
+    ui->confirmaSenha->setEchoMode(QLineEdit::Password);
 }
 
 Cadastro::~Cadastro()
@@ -22,27 +29,69 @@ void Cadastro::on_voltar_clicked()
     this->close();
 }
 
+bool Cadastro::validarSenha(const QString &senha) {
+    // Verifica se a senha não está vazia
+    if (senha.isEmpty()) {
+        return false;
+    }
 
-void Cadastro::on_salvar_clicked()
-{
-    QString nome = ui->nome->toPlainText();
-    QString login = ui->login->toPlainText();
-    QString senha = ui->Senha->toPlainText();
-    QString ConfirmaSenha = ui->confirma->toPlainText();
+    // Expressão regular para verificar se a senha contém:
+    // - Pelo menos um número (\d)
+    // - Pelo menos um caractere especial ([!@#$%^&*])
+    // - Comprimento mínimo de 8 caracteres (.{8,})
+    QRegularExpression regex("^(?=.*\\d)(?=.*[!@#$%^&*]).{8,}$");
 
+    // Verifica se a expressão regular é válida
+    if (!regex.isValid()) {
+        qDebug() << "Erro na expressão regular:" << regex.errorString();
+        return false;
+    }
+
+    // Verifica se a senha corresponde à expressão regular
+    QRegularExpressionMatch match = regex.match(senha);
+    return match.hasMatch();
+}
+
+void Cadastro::on_salvar_clicked() {
+    // Obter os valores dos campos
+    QString nome = ui->nome->text(); // Captura o texto do QLineEdit
+    QString login = ui->login->text(); // Captura o texto do QLineEdit
+    QString senha = ui->Senha->text(); // Captura o texto do QLineEdit
+    QString ConfirmaSenha = ui->confirmaSenha->text(); // Captura o texto do QLineEdit
+
+    // Verificar se os campos obrigatórios estão preenchidos
+    if (nome.isEmpty() || login.isEmpty() || senha.isEmpty() || ConfirmaSenha.isEmpty()) {
+        QMessageBox::warning(this, "Erro", "Todos os campos são obrigatórios.");
+        return;
+    }
+
+    // Validar a senha
+    if (!validarSenha(senha)) {
+        QMessageBox::warning(this, "Erro", "A senha deve conter:\n"
+                                           "- Pelo menos um número\n"
+                                           "- Pelo menos um caractere especial\n"
+                                           "- Mínimo de 8 caracteres.");
+        return;
+    }
+
+    // Verificar se as senhas coincidem
+    if (senha != ConfirmaSenha) {
+        QMessageBox::warning(this, "Erro", "As senhas não coincidem.");
+        return;
+    }
+
+    // Restante do código para salvar no banco de dados...
     QSqlQuery query;
-    query.prepare("INSERT INTO usuarios ( nome, login, senha, confirmaSenha) VALUES (:nome, :login, :senha, :confirmaSenha)");
+    query.prepare("INSERT INTO usuarios (nome, login, senha, confirmaSenha) VALUES (:nome, :login, :senha, :confirmaSenha)");
     query.bindValue(":nome", nome);
     query.bindValue(":login", login);
     query.bindValue(":senha", senha);
     query.bindValue(":confirmaSenha", ConfirmaSenha);
 
-
     if (query.exec()) {
         QMessageBox::information(this, "Sucesso", "Usuário registrado com sucesso!");
     } else {
         QString erroTexto = query.lastError().text(); // Obtém a mensagem de erro
-
         qDebug() << "Erro SQL detectado:" << erroTexto; // Exibe no console para debug
 
         // Tratamento de erro para entrada duplicada (MySQL)
@@ -53,7 +102,4 @@ void Cadastro::on_salvar_clicked()
             QMessageBox::critical(this, "Erro", "Erro ao registrar usuário:\n" + erroTexto);
         }
     }
-
 }
-
-
