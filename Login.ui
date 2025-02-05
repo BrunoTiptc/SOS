@@ -70,19 +70,6 @@
      <pixmap/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>770</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Li, e aceito os termos</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
@@ -197,7 +184,6 @@
    </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
-   <zorder>checkBox</zorder>
    <zorder>pushButton_3</zorder>
    <zorder>lineEdit</zorder>
    <zorder>label_3</zorder>

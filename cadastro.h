@@ -2,6 +2,10 @@
 #define CADASTRO_H
 
 #include <QMainWindow>
+#include <QWidget>
+#include <QFile>
+#include <QMessageBox>
+#include <QTextStream>
 
 namespace Ui {
 class Cadastro;
@@ -18,6 +22,7 @@ public:
 private slots:
     void on_voltar_clicked();
     void on_salvar_clicked();
+    void on_cliqueAqui_clicked();       //vai ser usado nos termos de uso
 
 private:
     Ui::Cadastro *ui;

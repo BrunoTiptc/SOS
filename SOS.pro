@@ -11,19 +11,20 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Login.cpp \
     cadastro.cpp \
     main.cpp \
-    mainwindow.cpp \
     telaprincipal.cpp
 
 HEADERS += \
+    Login.h \
+    Strings.h \
     cadastro.h \
-    mainwindow.h \
     telaprincipal.h
 
 FORMS += \
+    Login.ui \
     cadastro.ui \
-    mainwindow.ui \
     telaprincipal.ui
 
 # Default rules for deployment.
@@ -33,6 +34,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     Design.qrc
+
+DISTFILES += \
+    Documentação/termos_de_uso \
+    Documentação/termos_de_uso.txt \
+    Documentação/termos_de_uso.txt
 
 
 

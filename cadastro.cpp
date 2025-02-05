@@ -7,6 +7,9 @@
 #include <QMessageBox>
 #include <QRegularExpression>
 #include <QDebug>
+#include <QFile>
+#include <QTextStream>
+#include "Strings.h"
 
 Cadastro::Cadastro(QWidget *parent)
     : QMainWindow(parent)
@@ -80,6 +83,12 @@ void Cadastro::on_salvar_clicked() {
         return;
     }
 
+    // Verificar se o usuário aceitou os termos de uso
+    if (!ui->checkBox->isChecked()) {
+        QMessageBox::warning(this, "Erro", "Você precisa aceitar os termos de uso.");
+        return;
+    }
+
     // Restante do código para salvar no banco de dados...
     QSqlQuery query;
     query.prepare("INSERT INTO usuarios (nome, login, senha, confirmaSenha) VALUES (:nome, :login, :senha, :confirmaSenha)");
@@ -103,3 +112,16 @@ void Cadastro::on_salvar_clicked() {
         }
     }
 }
+
+void Cadastro::on_cliqueAqui_clicked() {
+    // Definição dos Termos de Uso diretamente em uma QString
+    QMessageBox msgBox;
+    msgBox.setWindowTitle("Termos de Uso");
+    msgBox.setText("Leia atentamente os termos abaixo:");
+    msgBox.setInformativeText(TERMOS_DE_USO);  // Usa a constante definida no arquivo externo
+    msgBox.setTextInteractionFlags(Qt::TextSelectableByMouse);
+    msgBox.setStyleSheet("QLabel{ min-width: 500px; min-height: 300px; }");
+
+    msgBox.exec();
+}
+
