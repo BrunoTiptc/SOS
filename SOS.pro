@@ -12,6 +12,7 @@ CONFIG += c++17
 
 SOURCES += \
     Login.cpp \
+    Telaprincipal1.cpp \
     cadastro.cpp \
     main.cpp \
     telaprincipal.cpp
@@ -19,11 +20,13 @@ SOURCES += \
 HEADERS += \
     Login.h \
     Strings.h \
+    Telaprincipal1.h \
     cadastro.h \
     telaprincipal.h
 
 FORMS += \
     Login.ui \
+    Telaprincipal1.ui \
     cadastro.ui \
     telaprincipal.ui
 

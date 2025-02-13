@@ -97,6 +97,7 @@ void Cadastro::on_salvar_clicked() {
     query.bindValue(":senha", senha);
     query.bindValue(":confirmaSenha", ConfirmaSenha);
 
+
     if (query.exec()) {
         QMessageBox::information(this, "Sucesso", "Usuário registrado com sucesso!");
     } else {

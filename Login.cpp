@@ -1,6 +1,10 @@
 #include "Login.h"
 #include "ui_Login.h"
 #include "qstring.h"
+#include "telaprincipal.h"
+#include "Telaprincipal1.h"
+#include <QMessageBox>
+#include <QLineEdit>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -31,11 +35,63 @@ void MainWindow::showError(const QString &message) {
     QMessageBox::critical(this, "Erro", message);
 }
 
-void MainWindow::on_pushButton_3_clicked()
-{
-    {
-        Cadastro *cadastroWindow = new Cadastro(this);
-        cadastroWindow->showMaximized(); //
+// Implementação da função de login
+bool MainWindow::login(const QString &login, const QString &senha) {
+    // Verifique se login e senha não estão vazios
+    if (login.isEmpty() || senha.isEmpty()) {
+        showError("Por favor, preencha ambos os campos de login e senha.");
+        return false;
     }
+
+    QSqlQuery query;
+    query.prepare("SELECT role FROM usuarios WHERE nome = :nome AND senha = :senha");
+    query.bindValue(":nome", login);
+    query.bindValue(":senha", senha);
+
+    if (query.exec()) {
+        if (query.next()) {
+            QString role = query.value(0).toString();
+            if (role == "admin") {
+                // Mostra painel admin
+                showAdminPainel();
+                return true;
+            } else if (role == "user") {
+                // Mostra painel usuário
+                showUserPainel();
+                return true;
+            }
+        }
+    } else {
+        qDebug() << "Erro ao executar consulta: " << query.lastError().text();
+    }
+    return false;
 }
 
+void MainWindow::on_pushButton_3_clicked() {
+    Cadastro *cadastroWindow = new Cadastro(this);
+    cadastroWindow->showMaximized();
+}
+
+void MainWindow::on_pushButton_clicked() {
+    // Obtendo as entradas do usuário corretamente
+    QString login = ui->login->text();
+    QString senha = ui->senha->text();
+
+    if (this->login(login, senha)) {
+        // Login bem-sucedido, redireciona para a tela principal
+        // Aqui você pode chamar a função para mostrar o painel do admin ou do usuário
+    } else {
+        showError("Credenciais inválidas. Por favor, tente novamente.");
+    }
+}
+// Função para mostrar a tela principal do admin
+void MainWindow::showAdminPainel() {
+    telaPrincipal *telaPrincipal = new class telaPrincipal(this); // Corrigido para usar a classe correta
+    telaPrincipal->show(); // Abre a tela principal do admin
+}
+
+// Função para mostrar a tela principal do usuário
+void MainWindow::showUserPainel() {
+    Telaprincipal1 *TelaPrincipal1 = new class Telaprincipal1(this); // Corrigido para usar a classe correta
+    TelaPrincipal1->show(); // Abre a tela principal para usuário
+}

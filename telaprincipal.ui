@@ -6,49 +6,184 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>576</height>
+    <width>798</width>
+    <height>715</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>641</width>
-      <height>541</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>Tab 1</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Tab 2</string>
-     </attribute>
-    </widget>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(37, 190, 255);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Corridas</string>
+       </attribute>
+       <widget class="QListWidget" name="listWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>141</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Adicionar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Editar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Consultar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Excluir</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Cadastrar Empresas</string>
+       </attribute>
+       <widget class="QListWidget" name="listWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>141</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Adicionar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Editar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Consultar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Excluir</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Cadastrar Motoboys</string>
+       </attribute>
+       <widget class="QListWidget" name="listWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>141</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Adicionar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Editar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Consultar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Excluir</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>640</width>
+     <width>798</width>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionSalvar"/>
+    <addaction name="actionImprimir"/>
+    <addaction name="actionAbrir_Arquivo"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionDuvidas"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuAjuda"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSalvar">
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+  <action name="actionImprimir">
+   <property name="text">
+    <string>Imprimir</string>
+   </property>
+  </action>
+  <action name="actionAbrir_Arquivo">
+   <property name="text">
+    <string>Abrir Arquivo</string>
+   </property>
+  </action>
+  <action name="actionDuvidas">
+   <property name="text">
+    <string>Duvidas</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

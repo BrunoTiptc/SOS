@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
-    <height>1024</height>
+    <width>1177</width>
+    <height>945</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 170, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="maximumSize">
@@ -20,58 +23,19 @@
      <height>1024</height>
     </size>
    </property>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1280</width>
-      <height>1024</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>1280</width>
-      <height>1024</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>1280</width>
-      <height>1024</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <family>Franklin Gothic Medium</family>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 170, 255);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>407</x>
-      <y>0</y>
-      <width>420</width>
-      <height>100</height>
+      <x>270</x>
+      <y>20</y>
+      <width>681</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Candara</family>
-      <pointsize>39</pointsize>
+      <family>SimSun</family>
+      <pointsize>51</pointsize>
       <bold>true</bold>
       <underline>false</underline>
       <strikeout>false</strikeout>
@@ -199,6 +163,9 @@
       <height>30</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
      <string>Salvar</string>
     </property>
@@ -211,6 +178,9 @@
       <width>120</width>
       <height>30</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Voltar</string>
@@ -225,6 +195,9 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="login">
     <property name="geometry">
@@ -234,6 +207,9 @@
       <width>411</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="nome">
@@ -245,6 +221,9 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="confirmaSenha">
     <property name="geometry">
@@ -254,6 +233,9 @@
       <width>411</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QPushButton" name="cliqueAqui">
@@ -283,8 +265,8 @@
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>255</red>
-          <green>255</green>
+          <red>0</red>
+          <green>170</green>
           <blue>255</blue>
          </color>
         </brush>
@@ -355,8 +337,8 @@
        <colorrole role="Base">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>255</red>
-          <green>255</green>
+          <red>0</red>
+          <green>170</green>
           <blue>255</blue>
          </color>
         </brush>
@@ -364,8 +346,8 @@
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>255</red>
-          <green>255</green>
+          <red>0</red>
+          <green>170</green>
           <blue>255</blue>
          </color>
         </brush>
@@ -438,8 +420,8 @@
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>255</red>
-          <green>255</green>
+          <red>0</red>
+          <green>170</green>
           <blue>255</blue>
          </color>
         </brush>
@@ -510,8 +492,8 @@
        <colorrole role="Base">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>255</red>
-          <green>255</green>
+          <red>0</red>
+          <green>170</green>
           <blue>255</blue>
          </color>
         </brush>
@@ -519,8 +501,8 @@
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>255</red>
-          <green>255</green>
+          <red>0</red>
+          <green>170</green>
           <blue>255</blue>
          </color>
         </brush>
@@ -593,8 +575,8 @@
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>255</red>
-          <green>255</green>
+          <red>0</red>
+          <green>170</green>
           <blue>255</blue>
          </color>
         </brush>
@@ -665,8 +647,8 @@
        <colorrole role="Base">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>255</red>
-          <green>255</green>
+          <red>0</red>
+          <green>170</green>
           <blue>255</blue>
          </color>
         </brush>
@@ -674,8 +656,8 @@
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>255</red>
-          <green>255</green>
+          <red>0</red>
+          <green>170</green>
           <blue>255</blue>
          </color>
         </brush>
@@ -739,6 +721,7 @@
     </property>
     <property name="font">
      <font>
+      <bold>true</bold>
       <kerning>true</kerning>
      </font>
     </property>
@@ -808,13 +791,27 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <bool>false</bool>
     </property>
    </widget>
+   <zorder>label_2</zorder>
+   <zorder>Nome</zorder>
+   <zorder>Login</zorder>
+   <zorder>Senha_2</zorder>
+   <zorder>ConfirmaSenha</zorder>
+   <zorder>checkBox</zorder>
+   <zorder>salvar</zorder>
+   <zorder>Senha</zorder>
+   <zorder>login</zorder>
+   <zorder>nome</zorder>
+   <zorder>confirmaSenha</zorder>
+   <zorder>cliqueAqui</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>voltar</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1280</width>
+     <width>1177</width>
      <height>22</height>
     </rect>
    </property>

@@ -74,7 +74,7 @@
     <property name="geometry">
      <rect>
       <x>600</x>
-      <y>850</y>
+      <y>840</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -83,11 +83,11 @@
      <string>Registrar</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="login">
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>690</y>
+      <y>670</y>
       <width>181</width>
       <height>31</height>
      </rect>
@@ -105,7 +105,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Login</string>
+     <string>1</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -115,21 +115,22 @@
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>800</y>
-      <width>271</width>
+      <y>780</y>
+      <width>161</width>
       <height>51</height>
      </rect>
     </property>
     <property name="text">
-     <string>Ainda não tem uma conta?              
-  Clique aqui</string>
+     <string>Ainda não tem uma conta?        
+      
+ Clique aqui</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="senha">
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>730</y>
+      <y>710</y>
       <width>181</width>
       <height>31</height>
      </rect>
@@ -182,14 +183,28 @@
      <pixmap resource="Design.qrc">:/new/prefix1/background.jpg</pixmap>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>750</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Entrar</string>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>pushButton_3</zorder>
-   <zorder>lineEdit</zorder>
+   <zorder>login</zorder>
    <zorder>label_3</zorder>
-   <zorder>lineEdit_2</zorder>
+   <zorder>senha</zorder>
    <zorder>label_4</zorder>
    <zorder>label_5</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -211,7 +226,7 @@
      <rect>
       <x>304</x>
       <y>131</y>
-      <width>183</width>
+      <width>184</width>
       <height>114</height>
      </rect>
     </property>
