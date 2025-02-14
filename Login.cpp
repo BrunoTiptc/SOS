@@ -44,8 +44,8 @@ bool MainWindow::login(const QString &login, const QString &senha) {
     }
 
     QSqlQuery query;
-    query.prepare("SELECT role FROM usuarios WHERE nome = :nome AND senha = :senha");
-    query.bindValue(":nome", login);
+    query.prepare("SELECT role FROM usuarios WHERE login = :login AND senha = :senha");
+    query.bindValue(":login", login);
     query.bindValue(":senha", senha);
 
     if (query.exec()) {
@@ -55,11 +55,12 @@ bool MainWindow::login(const QString &login, const QString &senha) {
                 // Mostra painel admin
                 showAdminPainel();
                 return true;
-            } else if (role == "user") {
+            } else if (role == "motoboy") {
                 // Mostra painel usuário
                 showUserPainel();
                 return true;
             }
+
         }
     } else {
         qDebug() << "Erro ao executar consulta: " << query.lastError().text();
@@ -87,11 +88,11 @@ void MainWindow::on_pushButton_clicked() {
 // Função para mostrar a tela principal do admin
 void MainWindow::showAdminPainel() {
     telaPrincipal *telaPrincipal = new class telaPrincipal(this); // Corrigido para usar a classe correta
-    telaPrincipal->show(); // Abre a tela principal do admin
+    telaPrincipal->showMaximized(); // Abre a tela principal do admin
 }
 
 // Função para mostrar a tela principal do usuário
 void MainWindow::showUserPainel() {
     Telaprincipal1 *TelaPrincipal1 = new class Telaprincipal1(this); // Corrigido para usar a classe correta
-    TelaPrincipal1->show(); // Abre a tela principal para usuário
+    TelaPrincipal1->showMaximized(); // Abre a tela principal para usuário
 }
