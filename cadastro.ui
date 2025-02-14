@@ -145,7 +145,7 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>740</y>
+      <y>760</y>
       <width>251</width>
       <height>21</height>
      </rect>
@@ -245,7 +245,7 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>680</y>
+      <y>710</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -753,10 +753,10 @@
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>563</x>
-      <y>679</y>
-      <width>151</width>
-      <height>41</height>
+      <x>570</x>
+      <y>710</y>
+      <width>191</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -791,6 +791,60 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <bool>false</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>600</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Escolha o tipo da sua conta </string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="role">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>650</y>
+      <width>411</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>15</pointsize>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>admin</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>motoboy</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>empresa</string>
+     </property>
+    </item>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>Nome</zorder>
    <zorder>Login</zorder>
@@ -805,6 +859,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <zorder>cliqueAqui</zorder>
    <zorder>textEdit</zorder>
    <zorder>voltar</zorder>
+   <zorder>label</zorder>
+   <zorder>role</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

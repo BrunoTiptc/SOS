@@ -7,7 +7,6 @@
 #include <QMessageBox>
 #include <QRegularExpression>
 #include <QDebug>
-#include <QFile>
 #include <QTextStream>
 #include "Strings.h"
 
@@ -20,6 +19,8 @@ Cadastro::Cadastro(QWidget *parent)
     // Configurar os campos de senha para exibir bolinhas
     ui->Senha->setEchoMode(QLineEdit::Password);
     ui->confirmaSenha->setEchoMode(QLineEdit::Password);
+    ui->role->setCurrentRow(0);
+
 }
 
 Cadastro::~Cadastro()
@@ -61,6 +62,8 @@ void Cadastro::on_salvar_clicked() {
     QString login = ui->login->text(); // Captura o texto do QLineEdit
     QString senha = ui->Senha->text(); // Captura o texto do QLineEdit
     QString ConfirmaSenha = ui->confirmaSenha->text(); // Captura o texto do QLineEdit
+    QString role = ui->role->currentItem()->text();
+
 
     // Verificar se os campos obrigatórios estão preenchidos
     if (nome.isEmpty() || login.isEmpty() || senha.isEmpty() || ConfirmaSenha.isEmpty()) {
@@ -89,13 +92,17 @@ void Cadastro::on_salvar_clicked() {
         return;
     }
 
+
+
+
     // Restante do código para salvar no banco de dados...
     QSqlQuery query;
-    query.prepare("INSERT INTO usuarios (nome, login, senha, confirmaSenha) VALUES (:nome, :login, :senha, :confirmaSenha)");
+    query.prepare("INSERT INTO usuarios (nome, login, senha, confirmaSenha, role) VALUES (:nome, :login, :senha, :confirmaSenha, :role)");
     query.bindValue(":nome", nome);
     query.bindValue(":login", login);
     query.bindValue(":senha", senha);
     query.bindValue(":confirmaSenha", ConfirmaSenha);
+    query.bindValue(":role", role);
 
 
     if (query.exec()) {
@@ -111,6 +118,7 @@ void Cadastro::on_salvar_clicked() {
             // Para outros erros, mostra a mensagem original do banco
             QMessageBox::critical(this, "Erro", "Erro ao registrar usuário:\n" + erroTexto);
         }
+
     }
 }
 
