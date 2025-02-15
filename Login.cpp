@@ -59,6 +59,10 @@ bool MainWindow::login(const QString &login, const QString &senha) {
                 // Mostra painel usuário
                 showUserPainel();
                 return true;
+            }  else if (role == "empresa") {
+                // Mostra painel usuário
+                showUserPainel();
+                return true;
             }
 
         }
