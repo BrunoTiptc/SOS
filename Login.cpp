@@ -31,6 +31,9 @@ void MainWindow::testDatabaseQuery() {
     }
 }
 
+
+
+
 void MainWindow::showError(const QString &message) {
     QMessageBox::critical(this, "Erro", message);
 }
