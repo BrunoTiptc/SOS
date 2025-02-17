@@ -24,6 +24,8 @@ private slots:
     void on_salvar_clicked();
     void on_cliqueAqui_clicked();       //vai ser usado nos termos de uso
 
+    void on_radioButton_toggled(bool checked);
+
 private:
     Ui::Cadastro *ui;
     bool validarSenha(const QString &senha); // Declaração da função

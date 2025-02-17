@@ -134,3 +134,16 @@ void Cadastro::on_cliqueAqui_clicked() {
     msgBox.exec();
 }
 
+
+void Cadastro::on_radioButton_toggled(bool checked)
+{
+    if (checked) {
+        ui->Senha->setEchoMode(QLineEdit::Normal);
+         ui->confirmaSenha->setEchoMode(QLineEdit::Normal);
+    } else {
+        ui->Senha->setEchoMode(QLineEdit::Password);
+         ui->confirmaSenha->setEchoMode(QLineEdit::Password);
+    }
+}
+
+
