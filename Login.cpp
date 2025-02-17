@@ -5,6 +5,9 @@
 #include "Telaprincipal1.h"
 #include <QMessageBox>
 #include <QLineEdit>
+#include <QRadioButton>
+
+
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -13,12 +16,14 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     testDatabaseQuery();
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
 
 void MainWindow::testDatabaseQuery() {
     QSqlQuery query;
@@ -103,3 +108,13 @@ void MainWindow::showUserPainel() {
     Telaprincipal1 *TelaPrincipal1 = new class Telaprincipal1(this); // Corrigido para usar a classe correta
     TelaPrincipal1->showMaximized(); // Abre a tela principal para usuário
 }
+
+void MainWindow::on_botao_toggled(bool checked)
+{
+    if (checked) {
+        ui->senha->setEchoMode(QLineEdit::Normal);
+    } else {
+        ui->senha->setEchoMode(QLineEdit::Password);
+    }
+}
+

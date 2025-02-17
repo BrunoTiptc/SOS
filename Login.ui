@@ -135,7 +135,6 @@
        <font>
         <family>SimSun</family>
         <pointsize>12</pointsize>
-        <bold>true</bold>
        </font>
       </property>
       <property name="contextMenuPolicy">
@@ -197,6 +196,8 @@
         </property>
         <property name="font">
          <font>
+          <family>SimSun</family>
+          <pointsize>8</pointsize>
           <kerning>true</kerning>
          </font>
         </property>
@@ -211,7 +212,7 @@
 border (border-radius: 30px;);</string>
         </property>
         <property name="text">
-         <string>senha</string>
+         <string>Senha</string>
         </property>
         <property name="maxLength">
          <number>200</number>
@@ -231,7 +232,7 @@ border (border-radius: 30px;);</string>
        </widget>
       </item>
       <item alignment="Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter">
-       <widget class="QRadioButton" name="radioButton">
+       <widget class="QRadioButton" name="botao">
         <property name="text">
          <string>Mostrar Caracteres</string>
         </property>
@@ -261,7 +262,7 @@ border (border-radius: 30px;);</string>
       </property>
       <property name="font">
        <font>
-        <family>SimSun</family>
+        <family>Courier New</family>
         <pointsize>18</pointsize>
         <bold>true</bold>
        </font>
@@ -320,7 +321,7 @@ border (border-radius: 30px;);</string>
         </property>
         <property name="font">
          <font>
-          <family>SimSun</family>
+          <family>Courier New</family>
           <pointsize>18</pointsize>
           <bold>true</bold>
          </font>
