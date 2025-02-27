@@ -2,6 +2,8 @@
 #define STRINGS_H
 
 
+#include "qcontainerfwd.h"
+#include "qobject.h"
 const QString TERMOS_DE_USO =
     "TERMOS DE USO\n\n"
     "1. Você concorda em não compartilhar suas credenciais.\n"

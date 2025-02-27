@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
 
     // Verifique os drivers disponíveis
-    qDebug() << "Drivers disponíveis:" << QSqlDatabase::drivers();
+    //qDebug() << "Drivers disponíveis:" << QSqlDatabase::drivers();
 
     void connectToDatabase();
 

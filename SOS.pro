@@ -14,6 +14,7 @@ SOURCES += \
     Login.cpp \
     Telaprincipal1.cpp \
     cadastro.cpp \
+    cadastro1.cpp \
     main.cpp \
     telaprincipal.cpp
 
@@ -22,12 +23,14 @@ HEADERS += \
     Strings.h \
     Telaprincipal1.h \
     cadastro.h \
+    cadastro1.h \
     telaprincipal.h
 
 FORMS += \
     Login.ui \
     Telaprincipal1.ui \
     cadastro.ui \
+    cadastro1.ui \
     telaprincipal.ui
 
 # Default rules for deployment.
@@ -41,7 +44,8 @@ RESOURCES += \
 DISTFILES += \
     Documentação/termos_de_uso \
     Documentação/termos_de_uso.txt \
-    Documentação/termos_de_uso.txt
+    Documentação/termos_de_uso.txt \
+    Imagens/branco de fundo.png
 
 
 

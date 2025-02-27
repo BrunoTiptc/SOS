@@ -1,22 +1,25 @@
 #include "Login.h"
+#include "qsqlerror.h"
 #include "ui_Login.h"
 #include "qstring.h"
 #include "telaprincipal.h"
 #include "Telaprincipal1.h"
 #include <QMessageBox>
 #include <QLineEdit>
-#include <QRadioButton>
-
-
-
+#include <QProgressBar>
+#include <QTimer>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    testDatabaseQuery();
-
+    // Configura a progress bar: define o intervalo e oculta inicialmente
+    ui->progressBar->setMinimum(0);
+    ui->progressBar->setMaximum(100);
+    ui->progressBar->setValue(0);
+    ui->progressBar->setVisible(false);
 }
 
 MainWindow::~MainWindow()
@@ -24,28 +27,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-void MainWindow::testDatabaseQuery() {
-    QSqlQuery query;
-    if (!query.exec("SELECT * FROM motoboy")) { // Nome de tabela incorreto para teste
-        showError("Erro ao executar a consulta: " + query.lastError().text());
-    } else {
-        while (query.next()) {
-            qDebug() << query.value(0).toString(); // Exemplo de como acessar os dados retornados
-        }
-    }
-}
-
-
-
-
 void MainWindow::showError(const QString &message) {
     QMessageBox::critical(this, "Erro", message);
 }
 
-// Implementação da função de login
 bool MainWindow::login(const QString &login, const QString &senha) {
-    // Verifique se login e senha não estão vazios
     if (login.isEmpty() || senha.isEmpty()) {
         showError("Por favor, preencha ambos os campos de login e senha.");
         return false;
@@ -60,19 +46,12 @@ bool MainWindow::login(const QString &login, const QString &senha) {
         if (query.next()) {
             QString role = query.value(0).toString();
             if (role == "admin") {
-                // Mostra painel admin
                 showAdminPainel();
                 return true;
-            } else if (role == "motoboy") {
-                // Mostra painel usuário
-                showUserPainel();
-                return true;
-            }  else if (role == "empresa") {
-                // Mostra painel usuário
+            } else if (role == "motoboy" || role == "empresa") {
                 showUserPainel();
                 return true;
             }
-
         }
     } else {
         qDebug() << "Erro ao executar consulta: " << query.lastError().text();
@@ -80,41 +59,75 @@ bool MainWindow::login(const QString &login, const QString &senha) {
     return false;
 }
 
-void MainWindow::on_pushButton_3_clicked() {
-    Cadastro *cadastroWindow = new Cadastro(this);
-    cadastroWindow->showMaximized();
-}
-
 void MainWindow::on_pushButton_clicked() {
-    // Obtendo as entradas do usuário corretamente
-    QString login = ui->login->text();
-    QString senha = ui->senha->text();
+    // Botão "Entrar" - inicia a animação do progress bar e valida o login
+    ui->progressBar->setVisible(true);
+    ui->progressBar->setValue(0);
 
-    if (this->login(login, senha)) {
-        // Login bem-sucedido, redireciona para a tela principal
-        // Aqui você pode chamar a função para mostrar o painel do admin ou do usuário
-    } else {
-        showError("Credenciais inválidas. Por favor, tente novamente.");
-    }
+    // Usa um QTimer para simular uma progressão (por exemplo, para validar restrições ou processar a requisição)
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, [this, timer]() {
+        int val = ui->progressBar->value();
+        if (val < 80) {
+            ui->progressBar->setValue(val + 20);
+        } else {
+            timer->stop();
+            timer->deleteLater();
+
+            QString userLogin = ui->login->text();
+            QString userSenha = ui->senha->text();
+
+            if (this->login(userLogin, userSenha)) {
+                ui->progressBar->setValue(100);
+                // Opcional: após um login bem-sucedido, você pode ocultar a progress bar
+                // ui->progressBar->setVisible(false);
+            } else {
+                // Em caso de falha, reseta e oculta a progress bar
+                ui->progressBar->setValue(0);
+                ui->progressBar->setVisible(false);
+                showError("Credenciais inválidas. Por favor, tente novamente.");
+            }
+        }
+    });
+    timer->start(100);
 }
-// Função para mostrar a tela principal do admin
+
+void MainWindow::on_pushButton_3_clicked() {
+    // Botão "Registrar" - inicia a animação do progress bar e abre a tela de cadastro
+    ui->progressBar->setVisible(true);
+    ui->progressBar->setValue(0);
+
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, [this, timer]() {
+        int val = ui->progressBar->value();
+        if (val < 100) {
+            ui->progressBar->setValue(val + 25);
+        } else {
+            timer->stop();
+            timer->deleteLater();
+            // Abre a janela de cadastro após a progressão completa
+            Cadastro *cadastroWindow = new Cadastro(this);
+            cadastroWindow->showMaximized();
+            ui->progressBar->setVisible(false);
+        }
+    });
+    timer->start(100);
+}
+
 void MainWindow::showAdminPainel() {
-    telaPrincipal *telaPrincipal = new class telaPrincipal(this); // Corrigido para usar a classe correta
-    telaPrincipal->showMaximized(); // Abre a tela principal do admin
+    telaPrincipal *telaPrincipalWindow = new telaPrincipal(this);
+    telaPrincipalWindow->showMaximized();
 }
 
-// Função para mostrar a tela principal do usuário
 void MainWindow::showUserPainel() {
-    Telaprincipal1 *TelaPrincipal1 = new class Telaprincipal1(this); // Corrigido para usar a classe correta
-    TelaPrincipal1->showMaximized(); // Abre a tela principal para usuário
+    Telaprincipal1 *TelaPrincipal1 = new Telaprincipal1(this);
+    TelaPrincipal1->showMaximized();
 }
 
-void MainWindow::on_botao_toggled(bool checked)
-{
+void MainWindow::on_botao_toggled(bool checked) {
     if (checked) {
         ui->senha->setEchoMode(QLineEdit::Normal);
     } else {
         ui->senha->setEchoMode(QLineEdit::Password);
     }
 }
-

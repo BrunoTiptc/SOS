@@ -1,42 +1,45 @@
-#ifndef LOGIN_H
-#define LOGIN_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "cadastro.h"
+#include <QThread>
 #include <QSqlQuery>
-#include <QSqlError>
-#include <QDebug>
 #include <QMessageBox>
+#include "Cadastro.h"
+#include "Telaprincipal1.h"
+#include "telaPrincipal.h"
 
-
-QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
 }
-QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+signals:
+    void loginSuccessful();
+
+
 private slots:
-    void on_pushButton_3_clicked();
     void on_pushButton_clicked();
+    void on_pushButton_3_clicked();
     void on_botao_toggled(bool checked);
 
+    void on_pushButton_toggled(bool checked);
+
 private:
-    void testDatabaseQuery();
+    Ui::MainWindow *ui;
     void showError(const QString &message);
     bool login(const QString &login, const QString &senha);
     void showAdminPainel();
     void showUserPainel();
 
-private:
-    Ui::MainWindow *ui;
 };
 
-#endif // LOGIN_H
+#endif // MAINWINDOW_H
+
