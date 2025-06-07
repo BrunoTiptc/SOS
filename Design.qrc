@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>background.jpg</file>
+        <file>Imagens/Gemini_Generated_Image_k1xqgjk1xqgjk1xq.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Imagens/branco de fundo.png</file>
+        <file>Imagens/fundo background cor.png</file>
+    </qresource>
+</RCC>

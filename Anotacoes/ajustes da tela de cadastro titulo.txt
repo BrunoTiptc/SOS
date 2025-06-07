@@ -1,0 +1,4 @@
+area do objeto 420 x 192  =  420 / 2 = 210
+area do background 1280 x 1024
+1024 - 210  = 814
+814 / 2 = 407
