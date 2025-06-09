@@ -1,9 +1,10 @@
-#include "Login.h"
+//#include "Login.h"
 #include <QApplication>
 #include <QSqlDatabase>
 #include <QSqlError>
 #include <QSqlQuery>
 #include <QDebug>
+#include <telaPrincipal.h>
 #include <QMessageBox>
 
 int main(int argc, char *argv[]) {
@@ -28,7 +29,8 @@ int main(int argc, char *argv[]) {
         return -1;
     }
 
-    MainWindow w;
+    //MainWindow w;
+    telaPrincipal w;
     w.showMaximized();
     return a.exec();
 }
