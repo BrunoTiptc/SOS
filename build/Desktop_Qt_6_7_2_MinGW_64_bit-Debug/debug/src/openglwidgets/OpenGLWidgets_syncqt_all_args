@@ -1,0 +1,21 @@
+-module
+QtOpenGLWidgets
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/openglwidgets
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/openglwidgets
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtOpenGLWidgets
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtOpenGLWidgets/6.7.2/QtOpenGLWidgets/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtOpenGLWidgets/6.7.2/QtOpenGLWidgets/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtOpenGLWidgets/6.7.2/QtOpenGLWidgets/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtOpenGLWidgets/6.7.2/QtOpenGLWidgets/ssg
+-generatedHeaders
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtOpenGLWidgets/qtopenglwidgetsexports.h
+-all

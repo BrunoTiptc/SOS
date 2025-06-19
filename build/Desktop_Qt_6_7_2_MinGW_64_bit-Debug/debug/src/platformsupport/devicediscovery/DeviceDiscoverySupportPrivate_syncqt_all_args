@@ -1,0 +1,21 @@
+-module
+QtDeviceDiscoverySupport
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/devicediscovery
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/platformsupport/devicediscovery
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport/6.7.2/QtDeviceDiscoverySupport/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport/6.7.2/QtDeviceDiscoverySupport/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport/6.7.2/QtDeviceDiscoverySupport/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport/6.7.2/QtDeviceDiscoverySupport/ssg
+-generatedHeaders
+-internal
+-all

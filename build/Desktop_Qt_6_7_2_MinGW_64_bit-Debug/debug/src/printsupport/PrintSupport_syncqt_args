@@ -1,0 +1,87 @@
+-module
+QtPrintSupport
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/printsupport
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPrintSupport
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPrintSupport/6.7.2/QtPrintSupport/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPrintSupport/6.7.2/QtPrintSupport/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPrintSupport/6.7.2/QtPrintSupport/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPrintSupport/6.7.2/QtPrintSupport/ssg
+-generatedHeaders
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPrintSupport/qtprintsupportexports.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/printsupport/qtprintsupport-config.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/printsupport/qtprintsupport-config_p.h
+-qpaHeadersFilter
+(^|/)qplatform.+\.h$
+-headers
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPrintSupport/qtprintsupportexports.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qpaintengine_alpha_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qplatformprintdevice.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qplatformprintersupport.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qplatformprintplugin.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qprint_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qprintdevice_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qprintengine.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qprintengine_pdf_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qprinter.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qprinter_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qprinterinfo.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qprinterinfo_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qtprintsupportglobal.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qtprintsupportglobal_p.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/printsupport/qtprintsupport-config.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/printsupport/qtprintsupport-config_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/platform/windows/qprintengine_win_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/platform/windows/qwindowsprintdevice_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/platform/windows/qwindowsprintersupport_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/kernel/qpaintengine_preview_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/widgets/qprintpreviewwidget.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/dialogs/qabstractprintdialog.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/dialogs/qabstractprintdialog_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/dialogs/qpagesetupdialog.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/dialogs/qpagesetupdialog_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/dialogs/qprintdialog.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/printsupport/dialogs/qprintpreviewdialog.h
+-stagingDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPrintSupport/.syncqt_staging
+-knownModules
+EntryPointPrivate
+BundledPcre2
+BundledZLIB
+ZlibPrivate
+Core
+BundledLibpng
+PngPrivate
+BundledLibjpeg16bits
+BundledLibjpeg12bits
+BundledLibjpeg
+JpegPrivate
+BundledFreetype
+FreetypePrivate
+BundledHarfbuzz
+HarfbuzzPrivate
+Concurrent
+Sql
+Network
+Xml
+DBus
+Gui
+ExampleIconsPrivate
+OpenGL
+Widgets
+OpenGLWidgets
+DeviceDiscoverySupportPrivate
+FbSupportPrivate
+Test
+PrintSupport
+-versionScript
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/printsupport/PrintSupport.version.private_content

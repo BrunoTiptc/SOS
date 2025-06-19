@@ -1,0 +1,27 @@
+-module
+QtGui
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/gui
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/gui
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtGui
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtGui/6.7.2/QtGui/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtGui/6.7.2/QtGui/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtGui/6.7.2/QtGui/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtGui/6.7.2/QtGui/ssg
+-generatedHeaders
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtGui/qtguiexports.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/gui/qtgui-config.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/gui/qtgui-config_p.h
+-qpaHeadersFilter
+(^|/)qplatform.+\.h$|(^|/)qwindowsystem.+\.h$
+-rhiHeadersFilter
+(^|/)qrhi\.h$|(^|/)qrhi_platform\.h$|(^|/)qshader\.h$|(^|/)qshaderdescription\.h$
+-all

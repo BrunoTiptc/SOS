@@ -1,0 +1,58 @@
+-module
+QtFbSupport
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/fbconvenience
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/platformsupport/fbconvenience
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport/6.7.2/QtFbSupport/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport/6.7.2/QtFbSupport/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport/6.7.2/QtFbSupport/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport/6.7.2/QtFbSupport/ssg
+-generatedHeaders
+-internal
+-headers
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/fbconvenience/qfbbackingstore_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/fbconvenience/qfbcursor_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/fbconvenience/qfbscreen_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/fbconvenience/qfbvthandler_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/fbconvenience/qfbwindow_p.h
+-stagingDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport/.syncqt_staging
+-knownModules
+EntryPointPrivate
+BundledPcre2
+BundledZLIB
+ZlibPrivate
+Core
+BundledLibpng
+PngPrivate
+BundledLibjpeg16bits
+BundledLibjpeg12bits
+BundledLibjpeg
+JpegPrivate
+BundledFreetype
+FreetypePrivate
+BundledHarfbuzz
+HarfbuzzPrivate
+Concurrent
+Sql
+Network
+Xml
+DBus
+Gui
+ExampleIconsPrivate
+OpenGL
+Widgets
+OpenGLWidgets
+DeviceDiscoverySupportPrivate
+FbSupportPrivate
+-versionScript
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/platformsupport/fbconvenience/FbSupportPrivate.version.private_content

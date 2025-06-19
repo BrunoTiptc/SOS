@@ -1,0 +1,35 @@
+-module
+QtPng
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/3rdparty/libpng
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/3rdparty/libpng
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPng
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPng/6.7.2/QtPng/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPng/6.7.2/QtPng/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPng/6.7.2/QtPng/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPng/6.7.2/QtPng/ssg
+-generatedHeaders
+-nonQt
+-internal
+-headers
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/3rdparty/libpng/png.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/3rdparty/libpng/pngconf.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/3rdparty/libpng/pnglibconf.h
+-stagingDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtPng/.syncqt_staging
+-knownModules
+EntryPointPrivate
+BundledPcre2
+BundledZLIB
+ZlibPrivate
+Core
+BundledLibpng
+PngPrivate

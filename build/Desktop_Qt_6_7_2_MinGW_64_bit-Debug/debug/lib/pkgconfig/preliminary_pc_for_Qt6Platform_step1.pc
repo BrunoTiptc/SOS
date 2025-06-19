@@ -1,0 +1,14 @@
+prefix=C:/Qt/6.7.2/mingw_64
+exec_prefix=${prefix}
+bindir=${prefix}/bin
+libexecdir=${prefix}/./bin
+libdir=${prefix}/lib
+includedir=${prefix}/include
+$<$<BOOL:TRUE>:mkspecsdir=${prefix}/mkspecs>
+$<1: >
+Name: Qt6 Platform
+Description: Qt Platform module
+Version: 6.7.2
+Libs: $<$<NOT:$<STREQUAL:$<TARGET_PROPERTY:Qt6::Platform,TYPE>,INTERFACE_LIBRARY>>:-L${libdir} -lQt6Platform> $<$<BOOL:loose_link_options-NOTFOUND>:$<JOIN:$<REMOVE_DUPLICATES:loose_link_options-NOTFOUND>, >> $<JOIN:$<REMOVE_DUPLICATES:>, >
+Cflags: $<$<BOOL:${mkspecsdir}/win32-g++;${includedir}>:-I$<JOIN:$<REMOVE_DUPLICATES:${mkspecsdir}/win32-g++;${includedir}>, -I>> $<$<BOOL:WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;MINGW_HAS_SECURE_API=1;_WIN32_WINNT=0x0A00;WINVER=0x0A00>:-D$<JOIN:$<REMOVE_DUPLICATES:WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;MINGW_HAS_SECURE_API=1;_WIN32_WINNT=0x0A00;WINVER=0x0A00>, -D>>
+Requires: $<JOIN:$<REMOVE_DUPLICATES:>, >

@@ -1,0 +1,59 @@
+-module
+QtConcurrent
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/concurrent
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtConcurrent
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtConcurrent/6.7.2/QtConcurrent/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtConcurrent/6.7.2/QtConcurrent/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtConcurrent/6.7.2/QtConcurrent/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtConcurrent/6.7.2/QtConcurrent/ssg
+-generatedHeaders
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtConcurrent/qtconcurrentexports.h
+-headers
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtConcurrent/qtconcurrentexports.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtaskbuilder.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrent_global.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentcompilertest.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentfilter.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentfilterkernel.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentfunctionwrappers.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentiteratekernel.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentmap.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentmapkernel.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentmedian.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentreducekernel.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentrun.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentrunbase.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentstoredfunctioncall.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrenttask.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/concurrent/qtconcurrentthreadengine.h
+-stagingDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtConcurrent/.syncqt_staging
+-knownModules
+EntryPointPrivate
+BundledPcre2
+BundledZLIB
+ZlibPrivate
+Core
+BundledLibpng
+PngPrivate
+BundledLibjpeg16bits
+BundledLibjpeg12bits
+BundledLibjpeg
+JpegPrivate
+BundledFreetype
+FreetypePrivate
+BundledHarfbuzz
+HarfbuzzPrivate
+Concurrent
+-versionScript
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/concurrent/Concurrent.version.private_content

@@ -1,0 +1,21 @@
+-module
+QtFbSupport
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/fbconvenience
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/platformsupport/fbconvenience
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport/6.7.2/QtFbSupport/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport/6.7.2/QtFbSupport/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport/6.7.2/QtFbSupport/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtFbSupport/6.7.2/QtFbSupport/ssg
+-generatedHeaders
+-internal
+-all

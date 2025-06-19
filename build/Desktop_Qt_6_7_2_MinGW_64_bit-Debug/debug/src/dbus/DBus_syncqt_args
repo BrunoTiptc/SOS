@@ -1,0 +1,85 @@
+-module
+QtDBus
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/dbus
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDBus
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDBus/6.7.2/QtDBus/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDBus/6.7.2/QtDBus/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDBus/6.7.2/QtDBus/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDBus/6.7.2/QtDBus/ssg
+-generatedHeaders
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDBus/qtdbusexports.h
+-headers
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDBus/qtdbusexports.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/dbus_minimal_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbus_symbols_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusabstractadaptor.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusabstractadaptor_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusabstractinterface.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusabstractinterface_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusargument.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusargument_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusconnection.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusconnection_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusconnectioninterface.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusconnectionmanager_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbuscontext.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbuscontext_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbuserror.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusextratypes.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusintegrator_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusinterface.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusinterface_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusintrospection_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusmessage.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusmessage_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusmetaobject_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusmetatype.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusmetatype_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbuspendingcall.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbuspendingcall_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbuspendingreply.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusreply.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusserver.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusservicewatcher.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusthreaddebug_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusunixfiledescriptor.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusutil_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusvirtualobject.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qdbusxmlparser_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qtdbusglobal.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/dbus/qtdbusglobal_p.h
+-stagingDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDBus/.syncqt_staging
+-knownModules
+EntryPointPrivate
+BundledPcre2
+BundledZLIB
+ZlibPrivate
+Core
+BundledLibpng
+PngPrivate
+BundledLibjpeg16bits
+BundledLibjpeg12bits
+BundledLibjpeg
+JpegPrivate
+BundledFreetype
+FreetypePrivate
+BundledHarfbuzz
+HarfbuzzPrivate
+Concurrent
+Sql
+Network
+Xml
+DBus
+-versionScript
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/dbus/DBus.version.private_content

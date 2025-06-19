@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\no_extern_access_lib.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\no_extern_access_lib.dir/objects.a @CMakeFiles\no_extern_access_lib.dir\objects1.rsp
+C:\MinGW\bin\c++.exe -shared -o libno_extern_access_lib.dll -Wl,--out-implib,libno_extern_access_lib.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\no_extern_access_lib.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\no_extern_access_lib.dir\linkLibs.rsp

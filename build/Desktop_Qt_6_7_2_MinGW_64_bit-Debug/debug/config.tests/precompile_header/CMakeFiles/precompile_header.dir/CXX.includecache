@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/config.tests/precompile_header/header.h
+
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/config.tests/precompile_header/main.cpp
+
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/config.tests/precompile_header/CMakeFiles/precompile_header.dir/cmake_pch.hxx
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/config.tests/precompile_header/header.h
+-
+
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/config.tests/precompile_header/CMakeFiles/precompile_header.dir/cmake_pch.hxx.cxx
+

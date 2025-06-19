@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/config.tests/no_direct_extern_access/lib.cpp
+lib.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/config.tests/no_direct_extern_access/lib.h
+
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/config.tests/no_direct_extern_access/lib.h
+

@@ -1,0 +1,4 @@
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/config.tests/no_direct_extern_access/CMakeFiles/no_extern_access_lib.dir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/config.tests/no_direct_extern_access/CMakeFiles/no_extern_access_main.dir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/config.tests/no_direct_extern_access/CMakeFiles/edit_cache.dir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/config.tests/no_direct_extern_access/CMakeFiles/rebuild_cache.dir

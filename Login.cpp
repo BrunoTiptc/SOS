@@ -58,6 +58,9 @@ bool MainWindow::login(const QString &login, const QString &senha) {
     }
     return false;
 }
+void MainWindow::on_pushButton_toggled(bool checked) {
+    // Você pode deixar vazio ou colocar o código que quiser
+}
 
 void MainWindow::on_pushButton_clicked() {
     // Botão "Entrar" - inicia a animação do progress bar e valida o login

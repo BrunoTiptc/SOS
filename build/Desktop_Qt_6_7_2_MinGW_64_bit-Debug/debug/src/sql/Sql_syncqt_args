@@ -1,0 +1,69 @@
+-module
+QtSql
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/sql
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtSql
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtSql/6.7.2/QtSql/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtSql/6.7.2/QtSql/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtSql/6.7.2/QtSql/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtSql/6.7.2/QtSql/ssg
+-generatedHeaders
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtSql/qtsqlexports.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/sql/qtsql-config.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/sql/qtsql-config_p.h
+-headers
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtSql/qtsqlexports.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqlcachedresult_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqldatabase.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqldriver.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqldriver_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqldriverplugin.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqlerror.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqlfield.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqlindex.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqlnulldriver_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqlquery.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqlrecord.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqlresult.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qsqlresult_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qtsqlglobal.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/kernel/qtsqlglobal_p.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/sql/qtsql-config.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/sql/qtsql-config_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/models/qsqlquerymodel.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/models/qsqlquerymodel_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/models/qsqlrelationaldelegate.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/models/qsqlrelationaltablemodel.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/models/qsqltablemodel.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/sql/models/qsqltablemodel_p.h
+-stagingDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtSql/.syncqt_staging
+-knownModules
+EntryPointPrivate
+BundledPcre2
+BundledZLIB
+ZlibPrivate
+Core
+BundledLibpng
+PngPrivate
+BundledLibjpeg16bits
+BundledLibjpeg12bits
+BundledLibjpeg
+JpegPrivate
+BundledFreetype
+FreetypePrivate
+BundledHarfbuzz
+HarfbuzzPrivate
+Concurrent
+Sql
+-versionScript
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/sql/Sql.version.private_content

@@ -1,0 +1,54 @@
+-module
+QtDeviceDiscoverySupport
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/devicediscovery
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/platformsupport/devicediscovery
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport/6.7.2/QtDeviceDiscoverySupport/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport/6.7.2/QtDeviceDiscoverySupport/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport/6.7.2/QtDeviceDiscoverySupport/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport/6.7.2/QtDeviceDiscoverySupport/ssg
+-generatedHeaders
+-internal
+-headers
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/devicediscovery/qdevicediscovery_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/platformsupport/devicediscovery/qdevicediscovery_dummy_p.h
+-stagingDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtDeviceDiscoverySupport/.syncqt_staging
+-knownModules
+EntryPointPrivate
+BundledPcre2
+BundledZLIB
+ZlibPrivate
+Core
+BundledLibpng
+PngPrivate
+BundledLibjpeg16bits
+BundledLibjpeg12bits
+BundledLibjpeg
+JpegPrivate
+BundledFreetype
+FreetypePrivate
+BundledHarfbuzz
+HarfbuzzPrivate
+Concurrent
+Sql
+Network
+Xml
+DBus
+Gui
+ExampleIconsPrivate
+OpenGL
+Widgets
+OpenGLWidgets
+DeviceDiscoverySupportPrivate
+-versionScript
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/platformsupport/devicediscovery/DeviceDiscoverySupportPrivate.version.private_content

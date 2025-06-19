@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/config.tests/arch/arch.cpp
+../../src/corelib/global/archdetect.cpp
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/corelib/global/archdetect.cpp
+stdio.h
+-
+
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/corelib/global/archdetect.cpp
+qprocessordetection.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/corelib/global/qprocessordetection.h
+
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/corelib/global/qprocessordetection.h
+

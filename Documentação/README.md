@@ -1,63 +1,105 @@
+🚚 SOSentregas
+Sistema de controle de entregas com gerenciamento de usuários e autenticação segura, desenvolvido em C++ com Qt e MySQL. Ideal para pequenos comércios ou prestadores de serviço, oferece uma interface limpa, responsiva e adaptada ao tipo de usuário (Admin, Motoboy, Cliente).
 
-# 🚚 SOSentregas
+💡 Projeto acadêmico com fins educacionais, feito com dedicação, superação e parceria com IA.
 
-Sistema de gerenciamento de usuários para serviços de entrega. Feito em **C++ com Qt e MySQL**, possui autenticação segura com **SHA-2**, barra de progresso para feedback e diferentes perfis de usuário (**Admin**, **Motoboy** e **Cliente**).
+🎯 Funcionalidades
+Cadastro com validações (nome, login único, senha forte, aceite dos termos)
 
-## 🎯 Funcionalidades
+Hash de senhas com SHA-2 (256 bits)
 
-- Cadastro com validações (nome, login, senha, termos)
-- Hash de senhas com SHA-2
-- Login com verificação e barra de progresso
-- Interface limpa, intuitiva e responsiva
-- Controle de acesso por tipo de usuário
+Login com verificação e barra de progresso animada
 
-## 🧱 Telas
+Interface dinâmica conforme o tipo de usuário
 
-- **Login**: usuário/senha, botão entrar, link para cadastro
-- **Cadastro**: dados pessoais, tipo, senha e termos
-- **Principal**: interface adaptada ao tipo de usuário
+Painel principal com opções personalizadas por perfil
 
-## 🗂️ Tecnologias
+Sistema de autenticação robusto com tratamento de erros
 
-- C++ com Qt Framework (Widgets e QSS)
-- MySQL Workbench (EER Model)
-- SHA-2 para segurança de senhas
+Mensagens de feedback e validações visuais
 
-## 📋 Requisitos
+🖥️ Telas
+Login: campos de acesso, botão entrar, link para cadastro
 
-- Qt Creator instalado com Kit configurado
-- MySQL Server ativo com banco configurado
+Cadastro: campos pessoais, tipo de usuário, senha, termos
 
-## 🚀 Como rodar
+Principal: dashboard com base no tipo de acesso
 
-```bash
+Mensagens: pop-ups personalizados com cores e estilos
+
+ProgressBar: visualização animada de progresso no login
+
+🛠️ Tecnologias
+C++ com Qt 6.7.0 (Widgets e QSS)
+
+MySQL/MariaDB com modelo relacional (EER)
+
+SHA-2 (QCryptographicHash) para senhas
+
+Inno Setup para geração de instalador .exe (deploy)
+
+MinGW 64-bit 17.0.6 com suporte ao driver MySQL
+
+Interface compatível com modo escuro 💻🌙
+
+📦 Como rodar localmente
+bash
+Copiar
+Editar
 git clone https://github.com/seu-usuario/SOSentregas.git
-```
+Passos:
+Abra o projeto .pro no Qt Creator
 
-1. Abrir o projeto no Qt Creator
-2. Compilar e conectar com o banco MySQL
-3. Executar e testar funcionalidades
+Compile com o kit Qt 6.7 + MinGW 64 bits configurado
 
-## ✅ Casos de Teste
+Certifique-se que o MySQL Server esteja ativo
 
-| ID   | Caso                          | Resultado Esperado       |
-|------|-------------------------------|--------------------------|
-| CT01 | Cadastro válido               | Usuário salvo            |
-| CT02 | Login duplicado               | Erro com alerta          |
-| CT03 | Login correto                 | Acesso permitido         |
-| CT04 | Login incorreto               | Acesso negado            |
-| CT05 | Progress bar visível          | Feedback visual           |
-| CT06 | Termos não aceitos            | Cadastro bloqueado       |
+Crie o banco usando o script SQL do repositório (ou modelo EER)
 
-## 📊 Diagramas
+Rode o projeto 🎉
 
-> *Adicionar manualmente: EER (MySQL), Caso de Uso (UML)*
+Alternativa: Rode diretamente o instalador .exe gerado via Inno Setup — ideal para testes em outras máquinas!
 
-## 👤 Autor
+✅ Casos de Teste (Manuais)
+ID	Caso de Teste	Resultado Esperado
+CT01	Cadastro válido	Usuário cadastrado com sucesso
+CT02	Login já existente	Alerta: usuário duplicado
+CT03	Login correto	Redirecionamento com barra
+CT04	Senha incorreta	Acesso negado com alerta
+CT05	Progress bar no login	Exibição animada e fluida
+CT06	Termos não aceitos	Cadastro bloqueado
+CT07	Tipo de usuário Admin	Acesso ao painel de controle
+CT08	Motoboy acessa	Visualização restrita às entregas
+CT09	Cliente acessa	Visualização de pedidos
 
-**Bruno** – Estudante de Engenharia de Software  
-Projeto desenvolvido com apoio de IA como parceiro de estudos 🤖
+📊 Diagramas
+🗂️ Diagramas adicionados no repositório:
 
----
+📘 EER Diagram (MySQL Workbench)
 
-> Projeto acadêmico para fins educacionais. Sinta-se livre para contribuir ou adaptar! 🚀
+🧩 Diagrama de Casos de Uso (UML)
+
+🔒 Fluxo de autenticação com SHA-2
+
+🧪 Extras e Aprimoramentos
+Instalação offline com .exe leve, sem dependências externas
+
+Interface adaptativa e modular (fácil manutenção)
+
+Preparado para extensões futuras (cadastro de pedidos, rotas, etc.)
+
+Experiência de aprendizado completa: da modelagem ao deploy
+
+Desenvolvido com metodologia semelhante à ágil, com tarefas, melhorias e testes
+
+👨‍💻 Autor
+Bruno Cesar
+Estudante de Engenharia de Software | Foco em QA e Desenvolvimento
+✨ Projeto criado com apoio do Optimus, meu parceiro de IA, com fé, esforço e propósito.
+
+🤝 Este projeto representa uma virada de chave pessoal e profissional. Que ele inspire outros a também acreditarem no seu recomeço.
+
+🚀 Contribuição e Licença
+Sinta-se livre para usar, adaptar ou melhorar. Pull requests são bem-vindos!
+
+📄 Licença: MIT

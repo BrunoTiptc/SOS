@@ -1,0 +1,109 @@
+-module
+QtTest
+-sourceDir
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib
+-binaryDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/testlib
+-privateHeadersFilter
+.+_p(ch)?\.h
+-includeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtTest
+-privateIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtTest/6.7.2/QtTest/private
+-qpaIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtTest/6.7.2/QtTest/qpa
+-rhiIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtTest/6.7.2/QtTest/rhi
+-ssgIncludeDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtTest/6.7.2/QtTest/ssg
+-generatedHeaders
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtTest/qttestexports.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtTest/6.7.2/QtTest/private/qttestexports_p.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/testlib/qttestlib-config.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/testlib/qttestlib-config_p.h
+-headers
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtTest/qttestexports.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtTest/6.7.2/QtTest/private/qttestexports_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/3rdparty/cycle_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qabstracttestlogger_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qbenchmark.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qbenchmark_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qbenchmarkevent_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qbenchmarkmeasurement_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qbenchmarkmetric.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qbenchmarkmetric_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qbenchmarkperfevents_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qbenchmarktimemeasurers_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qcomparisontesthelper_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qcsvbenchmarklogger_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qemulationdetector_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qjunittestlogger_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qplaintestlogger_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qpropertytesthelper_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qsignaldumper_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qsignalspy.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtaptestlogger_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qteamcitylogger_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtest.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtest_gui.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtest_network.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtest_widgets.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestaccessible.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestassert.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestblacklist_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestcase.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestcase_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestcoreelement_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestdata.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestelement_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestelementattribute_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestevent.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtesteventloop.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtesthelpers_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestjunitstreamer_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestkeyboard.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestlog_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestmouse.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestresult_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestspontaneevent.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtestsystem.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtesttable_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qtesttouch.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qttestglobal.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qxmltestlogger_p.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/testlib/qttestlib-config.h
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/testlib/qttestlib-config_p.h
+C:/Qt/Src/qt-everywhere-src-6.7.2/qtbase/src/testlib/qabstractitemmodeltester.h
+-stagingDir
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/include/QtTest/.syncqt_staging
+-knownModules
+EntryPointPrivate
+BundledPcre2
+BundledZLIB
+ZlibPrivate
+Core
+BundledLibpng
+PngPrivate
+BundledLibjpeg16bits
+BundledLibjpeg12bits
+BundledLibjpeg
+JpegPrivate
+BundledFreetype
+FreetypePrivate
+BundledHarfbuzz
+HarfbuzzPrivate
+Concurrent
+Sql
+Network
+Xml
+DBus
+Gui
+ExampleIconsPrivate
+OpenGL
+Widgets
+OpenGLWidgets
+DeviceDiscoverySupportPrivate
+FbSupportPrivate
+Test
+-versionScript
+C:/Users/Bruno PC/Desktop/SOS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/src/testlib/Test.version.private_content
