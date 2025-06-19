@@ -6,12 +6,19 @@
 #include <QDebug>
 #include <telaPrincipal.h>
 #include <QMessageBox>
+#include <QFontDatabase>
+
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
 
     // Verifique os drivers disponíveis
     //qDebug() << "Drivers disponíveis:" << QSqlDatabase::drivers();
+    int id = QFontDatabase::addApplicationFont(":/Poppins-Regular.ttf");
+    QString family = QFontDatabase::applicationFontFamilies(id).at(0);
+    QFont poppinsFont(family);
+    QApplication::setFont(poppinsFont);
+
 
     void connectToDatabase();
 

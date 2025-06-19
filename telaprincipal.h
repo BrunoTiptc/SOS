@@ -24,6 +24,8 @@ private slots:
     void on_btnSalvarMotoboy_clicked();
     void carregarMotoboys();
     void carregarEmpresas();
+    int gerarProximoID(const QString& tabela, const QString& coluna);
+    void limparLayout(QLayout *layout);
 
 
 private:

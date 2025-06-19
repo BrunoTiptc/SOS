@@ -6,5 +6,6 @@
     <qresource prefix="/">
         <file>Imagens/branco de fundo.png</file>
         <file>Imagens/fundo background cor.png</file>
+        <file>Poppins-Regular.ttf</file>
     </qresource>
 </RCC>
